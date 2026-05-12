@@ -1,0 +1,290 @@
+/* ════════════════════════════════════════════════════════════════════════
+   RecetApp · Design System
+   Todos los componentes consumen estos tokens vía var(--token).
+   Nunca usar valores en crudo dentro de los styles inline.
+   ════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ─── Colores de marca ─────────────────────────────────────────────── */
+  --color-primary:        #4A7C59;
+  --color-primary-hover:  #3A6347;
+  --color-primary-light:  #E8F0EB;
+  --color-accent:         #C17F3E;
+  --color-accent-light:   #FDF3E7;
+
+  /* ─── Superficies ──────────────────────────────────────────────────── */
+  --color-bg:             #F9F6F0;
+  --color-bg-soft:        #F2EDE5;
+  --color-surface:        #FFFFFF;
+  --color-border:         #E2D9CE;
+
+  /* ─── Texto ────────────────────────────────────────────────────────── */
+  --color-text:           #1C1C1C;
+  --color-text-soft:      #6B6560;
+  --color-text-muted:     #9E9590;
+
+  /* ─── Semánticos ───────────────────────────────────────────────────── */
+  --color-success:        #4A7C59;
+  --color-success-light:  #E8F0EB;
+  --color-danger:         #C0392B;
+  --color-danger-light:   #FBE9E7;
+  --color-warning:        #C17F3E;
+
+  /* ─── Tipografía ───────────────────────────────────────────────────── */
+  --font-display:         'Playfair Display', Georgia, serif;
+  --font-body:            'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-size-xs:         0.75rem;
+  --font-size-sm:         0.875rem;
+  --font-size-base:       1rem;
+  --font-size-lg:         1.125rem;
+  --font-size-xl:         1.25rem;
+  --font-size-2xl:        1.5rem;
+  --font-size-3xl:        1.875rem;
+  --font-size-4xl:        2.25rem;
+  --font-size-5xl:        3rem;
+
+  /* ─── Sombras ──────────────────────────────────────────────────────── */
+  --shadow-sm: 0 1px 3px rgba(28,24,20,.07), 0 1px 2px rgba(28,24,20,.04);
+  --shadow-md: 0 4px 12px rgba(28,24,20,.08), 0 2px 4px rgba(28,24,20,.04);
+  --shadow-lg: 0 12px 32px rgba(28,24,20,.12), 0 4px 8px rgba(28,24,20,.06);
+  --shadow-xl: 0 20px 48px rgba(28,24,20,.16), 0 8px 16px rgba(28,24,20,.08);
+  --shadow-focus: 0 0 0 3px rgba(74, 124, 89, 0.18);
+
+  /* ─── Radios ───────────────────────────────────────────────────────── */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  12px;
+  --radius-xl:  20px;
+  --radius-pill: 999px;
+
+  /* ─── Spacing ──────────────────────────────────────────────────────── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+
+  /* ─── Transiciones ─────────────────────────────────────────────────── */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.22s ease;
+  --transition-slow: 0.35s ease;
+
+  /* ─── Z-indices ────────────────────────────────────────────────────── */
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-sidebar:  300;
+  --z-modal:    1000;
+  --z-toast:    1100;
+
+  /* ─── Layout ───────────────────────────────────────────────────────── */
+  --sidebar-width:      240px;
+  --bottom-nav-height:  64px;
+  --container-max:      1200px;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   Dark mode automático (sigue la preferencia del sistema operativo).
+   Solo se redefinen los tokens; los componentes no necesitan cambiar.
+   ════════════════════════════════════════════════════════════════════════ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary:        #6FA67F;
+    --color-primary-hover:  #80B790;
+    --color-primary-light:  #2A3D32;
+    --color-accent:         #D8A06A;
+    --color-accent-light:   #3D2F1E;
+
+    --color-bg:             #1A1815;
+    --color-bg-soft:        #221F1B;
+    --color-surface:        #2A2622;
+    --color-border:         #3A3530;
+
+    --color-text:           #F2EDE5;
+    --color-text-soft:      #B0A89F;
+    --color-text-muted:     #756E66;
+
+    --color-success:        #6FA67F;
+    --color-success-light:  #2A3D32;
+    --color-danger:         #E36A5C;
+    --color-danger-light:   #3D2220;
+    --color-warning:        #D8A06A;
+
+    --shadow-sm: 0 1px 3px rgba(0,0,0,.4), 0 1px 2px rgba(0,0,0,.3);
+    --shadow-md: 0 4px 12px rgba(0,0,0,.45), 0 2px 4px rgba(0,0,0,.3);
+    --shadow-lg: 0 12px 32px rgba(0,0,0,.55), 0 4px 8px rgba(0,0,0,.35);
+    --shadow-xl: 0 20px 48px rgba(0,0,0,.65), 0 8px 16px rgba(0,0,0,.4);
+    --shadow-focus: 0 0 0 3px rgba(111, 166, 127, 0.25);
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   Reset suave + base global.
+   Sobrescribe parcialmente Bootstrap (cargado antes que este archivo).
+   ════════════════════════════════════════════════════════════════════════ */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Títulos: Playfair Display por defecto. Los componentes pueden
+   sobrescribirlo localmente cuando convenga. */
+h1, h2, h3, h4, h5, h6,
+.display-font {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Foco accesible global. */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+   Animaciones reutilizables.
+   Cualquier componente puede usar `animation: fade-in 0.3s ease both`,
+   `animation: slide-up 0.4s ease both`, etc. sin redefinir keyframes.
+   ════════════════════════════════════════════════════════════════════════ */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Pequeño rebote vertical, ideal para iconos al hover. */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+
+/* Latido para el botón de like cuando se activa. */
+@keyframes pulse-heart {
+  0%   { transform: scale(1); }
+  20%  { transform: scale(1.35); }
+  40%  { transform: scale(0.92); }
+  60%  { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+/* Brillo deslizante para skeletons / placeholders. */
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
+}
+
+/* Spin reutilizable (lo usa el spinner y el botón "reintentar"). */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Respeto absoluto a quienes piden menos movimiento por accesibilidad
+   o por sensibilidad vestibular (configurado en el sistema operativo). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,57 @@
+security:
+    # Configuración del encriptador de contraseñas
+    password_hashers:
+        Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
+
+    # Proveedor de usuarios — busca usuarios por gmail en la BD
+    providers:
+        app_user_provider:
+            entity:
+                class: App\Entity\Usuario
+                property: gmail
+
+    firewalls:
+        # Zona de desarrollo — sin seguridad para el profiler
+        dev:
+            pattern: ^/(_profiler|_wdt|assets|build)/
+            security: false
+
+        # Ruta de login — pública para todos
+        login:
+            pattern: ^/api/login
+            stateless: true
+            provider: app_user_provider
+            json_login:
+                check_path: /api/login
+                username_path: gmail
+                password_path: password
+                success_handler: lexik_jwt_authentication.handler.authentication_success
+                failure_handler: App\EventListener\AuthenticationFailureListener
+
+        # Resto de rutas de la API — requieren token JWT
+        main:
+            pattern: ^/api
+            stateless: true
+            provider: app_user_provider
+            jwt: ~
+
+    # Control de acceso a las rutas
+    access_control:
+        # Login y registro son públicos
+        - { path: ^/api/login, roles: PUBLIC_ACCESS }
+        - { path: ^/api/registro, roles: PUBLIC_ACCESS }
+        # Ver y listar recetas es público
+        - { path: ^/api/recetas, roles: PUBLIC_ACCESS, methods: [GET] }
+        # Ver comentarios es público
+        - { path: ^/api/comentarios, roles: PUBLIC_ACCESS, methods: [GET] }
+        # Todo lo demás requiere estar autenticado
+        - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
+
+when@test:
+    security:
+        password_hashers:
+            Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface:
+                algorithm: auto
+                cost: 4
+                time_cost: 3
+                memory_cost: 10

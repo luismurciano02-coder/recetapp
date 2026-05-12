@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────────────────────────────
+# Symfony / Composer
+# ─────────────────────────────────────────────────────────────────────
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> lexik/jwt-authentication-bundle ###
+/config/jwt/*.pem
+###< lexik/jwt-authentication-bundle ###
+
+# ─────────────────────────────────────────────────────────────────────
+# Angular / Node (frontend)
+# ─────────────────────────────────────────────────────────────────────
+/recetapp-frontend/node_modules/
+/recetapp-frontend/dist/
+/recetapp-frontend/out-tsc/
+/recetapp-frontend/.angular/
+/recetapp-frontend/.vscode/
+/recetapp-frontend/coverage/
+/recetapp-frontend/*.log
+/recetapp-frontend/npm-debug.log*
+/recetapp-frontend/.env.local
+
+# ─────────────────────────────────────────────────────────────────────
+# IDE / OS
+# ─────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ─────────────────────────────────────────────────────────────────────
+# Otros
+# ─────────────────────────────────────────────────────────────────────
+*.local
+.phpunit.result.cache
