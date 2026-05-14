@@ -28,8 +28,31 @@ const CATEGORIES: { label: string; icon: string }[] = [
   template: `
     <!-- Hero crema con búsqueda grande. -->
     <section class="hero">
+      <!-- Decoración: gorro de chef grande semi-transparente en la esquina
+           derecha (el mismo SVG que la marca, en versión XL como watermark). -->
+      <svg
+        class="hero__decoration hero__decoration--hat"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M17 21H7c-.55 0-1-.45-1-1v-3h12v3c0 .55-.45 1-1 1zm0-6H7c-2.76 0-5-2.24-5-5 0-2.21 1.79-4 4-4 .07 0 .13.01.2.01.84-2.3 3.08-4.01 5.8-4.01s4.96 1.71 5.8 4.01c.07 0 .13-.01.2-.01 2.21 0 4 1.79 4 4 0 2.76-2.24 5-5 5z"/>
+      </svg>
+
+      <!-- Decoración secundaria: ramita de albahaca/laurel en la esquina
+           opuesta para equilibrar la composición visual. -->
+      <svg
+        class="hero__decoration hero__decoration--leaf"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/>
+      </svg>
+
       <div class="hero__inner">
-        <span class="hero__eyebrow">Bienvenido a RecetApp</span>
         <h1 class="hero__title">
           ¿Qué te apetece <em>cocinar</em> hoy?
         </h1>
@@ -148,19 +171,35 @@ const CATEGORIES: { label: string; icon: string }[] = [
         position: relative;
       }
 
-      .hero__eyebrow {
-        display: inline-block;
-        background: var(--color-surface);
+      /* ─── Decoraciones SVG flotantes ──────────────────────────────────
+         Watermarks visuales para dar carácter al hero sin competir con el
+         texto. Posición absoluta y baja opacidad para que se sientan como
+         "fondo" decorativo. */
+      .hero__decoration {
+        position: absolute;
         color: var(--color-primary);
-        padding: var(--space-1) var(--space-3);
-        border-radius: var(--radius-pill);
-        font-size: var(--font-size-xs);
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        margin-bottom: var(--space-4);
-        animation: slide-up 0.5s ease both;
-        animation-delay: 0ms;
+        opacity: 0.12;
+        pointer-events: none;
+        animation: fade-in 0.8s ease both;
+        animation-delay: 200ms;
+      }
+
+      .hero__decoration--hat {
+        top: -20px;
+        right: 40px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(12deg);
+      }
+
+      .hero__decoration--leaf {
+        bottom: -10px;
+        left: 30px;
+        width: 140px;
+        height: 140px;
+        transform: rotate(-18deg);
+        color: var(--color-accent);
+        opacity: 0.15;
       }
 
       .hero__title {
@@ -171,7 +210,7 @@ const CATEGORIES: { label: string; icon: string }[] = [
         line-height: 1.1;
         color: var(--color-text);
         animation: slide-up 0.5s ease both;
-        animation-delay: 80ms;
+        animation-delay: 0ms;
       }
 
       .hero__title em {
@@ -380,6 +419,20 @@ const CATEGORIES: { label: string; icon: string }[] = [
 
         .hero {
           padding: var(--space-6) var(--space-4);
+        }
+
+        /* Reducimos las decoraciones en móvil para no robar protagonismo. */
+        .hero__decoration--hat {
+          width: 130px;
+          height: 130px;
+          right: 10px;
+          top: -10px;
+        }
+
+        .hero__decoration--leaf {
+          width: 90px;
+          height: 90px;
+          left: 10px;
         }
 
         .hero__search {

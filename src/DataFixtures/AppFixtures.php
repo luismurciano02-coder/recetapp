@@ -113,7 +113,7 @@ class AppFixtures extends Fixture
             [
                 'Smoothie bowl tropical',
                 'Bowl espeso de plátano y mango con granola, coco y frutos rojos.',
-                10, 2, $img('1490323914169-4ef77bf0ce93'), 'Desayunos',
+                10, 2, $img('1627308594190-a057cd4bfac8'), 'Desayunos',
                 [['Plátano congelado', 2, 'ud'], ['Mango congelado', 200, 'g'], ['Yogur griego', 150, 'g'], ['Granola', 60, 'g'], ['Coco rallado', 20, 'g'], ['Frutos rojos', 80, 'g']],
                 [
                     'Tritura el plátano, el mango y el yogur hasta obtener una crema espesa.',
@@ -125,7 +125,7 @@ class AppFixtures extends Fixture
             [
                 'Granola casera con yogur',
                 'Granola crujiente al horno servida con yogur natural y miel.',
-                40, 6, $img('1517433367423-c7e5b0f35086'), 'Desayunos',
+                40, 6, $img('1621470626764-0e8c9303800a'), 'Desayunos',
                 [['Avena', 300, 'g'], ['Frutos secos', 100, 'g'], ['Miel', 80, 'g'], ['Aceite de coco', 40, 'g'], ['Yogur natural', 500, 'g'], ['Frutas frescas', 200, 'g']],
                 [
                     'Mezcla la avena con los frutos secos, la miel y el aceite de coco.',
@@ -137,7 +137,7 @@ class AppFixtures extends Fixture
             [
                 'Huevos benedictinos',
                 'Muffin inglés con bacon, huevo poché y salsa holandesa cremosa.',
-                30, 2, $img('1608039755401-742074f0548d'), 'Desayunos',
+                30, 2, $img('1608039829572-78524f79c4c7'), 'Desayunos',
                 [['Muffins ingleses', 2, 'ud'], ['Bacon', 4, 'lonchas'], ['Huevos', 4, 'ud'], ['Mantequilla', 100, 'g'], ['Yemas', 2, 'ud'], ['Limón', 0.5, 'ud']],
                 [
                     'Tuesta los muffins y dora el bacon en una sartén.',
@@ -187,7 +187,7 @@ class AppFixtures extends Fixture
             [
                 'Flan de huevo casero',
                 'Flan tradicional de huevo y leche con caramelo dorado.',
-                60, 6, $img('1551404973-761c83cd8339'), 'Postres',
+                60, 6, $img('1653988354010-39637252a2db'), 'Postres',
                 [['Huevos', 4, 'ud'], ['Leche', 500, 'ml'], ['Azúcar', 150, 'g'], ['Vainilla', 1, 'vaina'], ['Limón', 1, 'piel'], ['Azúcar caramelo', 80, 'g']],
                 [
                     'Haz el caramelo derritiendo los 80g de azúcar y vierte en el molde.',
@@ -199,7 +199,7 @@ class AppFixtures extends Fixture
             [
                 'Crepes con Nutella y plátano',
                 'Crepes finas francesas rellenas de crema de cacao y plátano laminado.',
-                20, 4, $img('1519676867240-f03562e64548'), 'Postres',
+                20, 4, $img('1491857224789-38449de629ce'), 'Postres',
                 [['Harina', 150, 'g'], ['Leche', 300, 'ml'], ['Huevos', 2, 'ud'], ['Mantequilla', 30, 'g'], ['Nutella', 200, 'g'], ['Plátanos', 2, 'ud']],
                 [
                     'Bate la harina, la leche, los huevos y la mantequilla derretida hasta obtener una masa lisa.',
@@ -223,7 +223,7 @@ class AppFixtures extends Fixture
             [
                 'Mousse de chocolate negro',
                 'Mousse esponjoso y aireado con un final intenso a chocolate puro.',
-                240, 4, $img('1541599540903-216a46ca1dc0'), 'Postres',
+                240, 4, $img('1590080875852-ba44f83ff2db'), 'Postres',
                 [['Chocolate negro 70%', 200, 'g'], ['Nata para montar', 300, 'ml'], ['Huevos', 3, 'ud'], ['Azúcar', 50, 'g'], ['Mantequilla', 30, 'g'], ['Sal', 1, 'pizca']],
                 [
                     'Funde el chocolate con la mantequilla al baño maría.',
@@ -249,7 +249,7 @@ class AppFixtures extends Fixture
             [
                 'Lasaña boloñesa',
                 'Capas de pasta, salsa boloñesa y bechamel gratinadas al horno.',
-                90, 6, $img('1574894709920-11b28e7367e3'), 'Pasta',
+                90, 6, $img('1709429790175-b02bb1b19207'), 'Pasta',
                 [['Placas de lasaña', 12, 'ud'], ['Carne picada', 500, 'g'], ['Tomate triturado', 800, 'g'], ['Bechamel', 600, 'ml'], ['Queso rallado', 200, 'g'], ['Cebolla', 1, 'ud']],
                 [
                     'Sofríe la cebolla picada y añade la carne hasta dorar.',
@@ -261,7 +261,7 @@ class AppFixtures extends Fixture
             [
                 'Pasta al pesto genovés',
                 'Pasta corta con salsa de albahaca, piñones, ajo y parmesano.',
-                15, 4, $img('1546549032-9571cd6b27df'), 'Pasta',
+                15, 4, $img('1567608285969-48e4bbe0d399'), 'Pasta',
                 [['Trofie o fusilli', 400, 'g'], ['Albahaca fresca', 60, 'g'], ['Piñones', 30, 'g'], ['Ajo', 1, 'diente'], ['Parmesano', 60, 'g'], ['Aceite de oliva', 100, 'ml']],
                 [
                     'Tritura albahaca, piñones, ajo y parmesano con aceite hasta una salsa lisa.',
@@ -273,7 +273,7 @@ class AppFixtures extends Fixture
             [
                 'Macarrones con queso al horno',
                 'Pasta cremosa cubierta de queso fundido y costra crujiente.',
-                40, 4, $img('1543339308-43e59d6b73a6'), 'Pasta',
+                40, 4, $img('1667499989723-c4ab9549d63c'), 'Pasta',
                 [['Macarrones', 400, 'g'], ['Mantequilla', 50, 'g'], ['Harina', 40, 'g'], ['Leche', 600, 'ml'], ['Cheddar rallado', 250, 'g'], ['Pan rallado', 50, 'g']],
                 [
                     'Cuece los macarrones 2 minutos menos que el tiempo del paquete.',
@@ -297,7 +297,7 @@ class AppFixtures extends Fixture
             [
                 'Penne arrabbiata',
                 'Pasta con tomate, ajo y guindilla — picante y reconfortante.',
-                20, 4, $img('1556761175-5973dc0f32e7'), 'Pasta',
+                20, 4, $img('1676300184847-4ee4030409c0'), 'Pasta',
                 [['Penne', 400, 'g'], ['Tomate triturado', 500, 'g'], ['Ajo', 3, 'dientes'], ['Guindilla', 1, 'ud'], ['Aceite de oliva', 50, 'ml'], ['Perejil', 1, 'puñado']],
                 [
                     'Pocha el ajo laminado con la guindilla en aceite a fuego suave.',
@@ -309,7 +309,7 @@ class AppFixtures extends Fixture
             [
                 'Fettuccine Alfredo',
                 'Pasta con salsa cremosa de mantequilla y parmesano.',
-                15, 2, $img('1551892374-ecf8754cf8b0'), 'Pasta',
+                15, 2, $img('1645112411341-6c4fd023714a'), 'Pasta',
                 [['Fettuccine', 250, 'g'], ['Mantequilla', 80, 'g'], ['Nata', 200, 'ml'], ['Parmesano', 100, 'g'], ['Pimienta negra', 1, 'cdta'], ['Sal', 1, 'pizca']],
                 [
                     'Cuece la pasta al dente.',
@@ -359,7 +359,7 @@ class AppFixtures extends Fixture
             [
                 'Costillas a la barbacoa',
                 'Costillas de cerdo glaseadas con salsa BBQ y horneadas a baja temperatura.',
-                180, 4, $img('1544025162-d76694265947'), 'Carnes',
+                180, 4, $img('1529193591184-b1d58069ecdd'), 'Carnes',
                 [['Costillas de cerdo', 1.5, 'kg'], ['Salsa BBQ', 200, 'ml'], ['Pimentón', 1, 'cda'], ['Azúcar moreno', 2, 'cda'], ['Ajo en polvo', 1, 'cdta'], ['Sal', 1, 'cdta']],
                 [
                     'Mezcla pimentón, azúcar, ajo y sal y úntalo sobre las costillas.',
@@ -371,7 +371,7 @@ class AppFixtures extends Fixture
             [
                 'Albóndigas en salsa de tomate',
                 'Albóndigas tiernas guisadas en salsa casera de tomate.',
-                50, 4, $img('1529042410759-befb1204b468'), 'Carnes',
+                50, 4, $img('1565086869529-8c7802cca7a0'), 'Carnes',
                 [['Carne picada mixta', 500, 'g'], ['Pan rallado', 50, 'g'], ['Huevo', 1, 'ud'], ['Tomate triturado', 500, 'g'], ['Cebolla', 1, 'ud'], ['Ajo', 2, 'dientes']],
                 [
                     'Mezcla carne, pan rallado y huevo, salpimenta y forma bolitas.',
@@ -383,7 +383,7 @@ class AppFixtures extends Fixture
             [
                 'Filete de ternera con salsa de setas',
                 'Filete a la plancha cubierto de salsa cremosa de setas.',
-                25, 2, $img('1558030006-450675393462'), 'Carnes',
+                25, 2, $img('1712746784937-aa56235fbab0'), 'Carnes',
                 [['Filete de ternera', 400, 'g'], ['Setas variadas', 250, 'g'], ['Nata', 150, 'ml'], ['Brandy', 30, 'ml'], ['Mantequilla', 30, 'g'], ['Perejil', 1, 'puñado']],
                 [
                     'Marca el filete a fuego fuerte 2 minutos por lado y reserva tapado.',
@@ -395,7 +395,7 @@ class AppFixtures extends Fixture
             [
                 'Pollo al curry con arroz',
                 'Pollo guisado en salsa cremosa de curry con leche de coco.',
-                45, 4, $img('1565895405137-61d1f3a9d36f'), 'Carnes',
+                45, 4, $img('1626790291085-19a27173773c'), 'Carnes',
                 [['Pollo en dados', 600, 'g'], ['Curry en pasta', 3, 'cda'], ['Leche de coco', 400, 'ml'], ['Cebolla', 1, 'ud'], ['Jengibre', 20, 'g'], ['Arroz basmati', 300, 'g']],
                 [
                     'Sofríe la cebolla picada con el jengibre rallado.',
@@ -433,7 +433,7 @@ class AppFixtures extends Fixture
             [
                 'Ensalada griega',
                 'Ensalada mediterránea con pepino, tomate, feta y aceitunas kalamata.',
-                15, 4, $img('1505253468034-514d2507d914'), 'Ensaladas',
+                15, 4, $img('1573409157844-6a56035363fc'), 'Ensaladas',
                 [['Tomate', 3, 'ud'], ['Pepino', 1, 'ud'], ['Cebolla roja', 0.5, 'ud'], ['Queso feta', 200, 'g'], ['Aceitunas kalamata', 100, 'g'], ['Orégano', 1, 'cdta']],
                 [
                     'Trocea tomate, pepino y cebolla roja en cubos grandes.',
@@ -469,7 +469,7 @@ class AppFixtures extends Fixture
             [
                 'Ensalada de quinoa y aguacate',
                 'Bowl saciante con quinoa, aguacate, tomate cherry y limón.',
-                25, 2, $img('1546069901-ba9599a7e63c'), 'Ensaladas',
+                25, 2, $img('1623428187969-5da2dcea5ebf'), 'Ensaladas',
                 [['Quinoa', 200, 'g'], ['Aguacate', 1, 'ud'], ['Tomate cherry', 200, 'g'], ['Maíz dulce', 100, 'g'], ['Cilantro', 1, 'puñado'], ['Lima', 1, 'ud']],
                 [
                     'Cuece la quinoa lavada en agua con sal 12 minutos. Escurre y enfría.',
@@ -495,7 +495,7 @@ class AppFixtures extends Fixture
             [
                 'Gazpacho andaluz',
                 'Sopa fría de tomate con pepino, pimiento y ajo. Refrescante.',
-                20, 4, $img('1572441710406-9af96f6efc05'), 'Sopas',
+                20, 4, $img('1529566186297-155c18f9a434'), 'Sopas',
                 [['Tomates maduros', 1, 'kg'], ['Pepino', 1, 'ud'], ['Pimiento verde', 1, 'ud'], ['Ajo', 1, 'diente'], ['Pan duro', 50, 'g'], ['Aceite virgen extra', 80, 'ml']],
                 [
                     'Pela y trocea los tomates. Pela el pepino y trocéalo igual.',
@@ -507,7 +507,7 @@ class AppFixtures extends Fixture
             [
                 'Sopa de fideos con pollo',
                 'Caldo casero con fideos finos y trocitos de pollo. Reconfortante.',
-                40, 4, $img('1539136788836-5fcf8da8f80a'), 'Sopas',
+                40, 4, $img('1470324161839-ce2bb6fa6bc3'), 'Sopas',
                 [['Pollo en muslos', 500, 'g'], ['Fideos finos', 150, 'g'], ['Zanahoria', 1, 'ud'], ['Puerro', 1, 'ud'], ['Apio', 1, 'rama'], ['Sal', 1, 'pizca']],
                 [
                     'Cuece el pollo con las verduras troceadas en 1.5L de agua durante 30 minutos.',
@@ -519,7 +519,7 @@ class AppFixtures extends Fixture
             [
                 'Crema de champiñones',
                 'Crema sedosa de champiñones con un toque de nata y perejil.',
-                30, 4, $img('1547592180-85f173990554'), 'Sopas',
+                30, 4, $img('1740797936651-c9148df80e07'), 'Sopas',
                 [['Champiñones', 600, 'g'], ['Cebolla', 1, 'ud'], ['Caldo de pollo', 800, 'ml'], ['Nata', 150, 'ml'], ['Mantequilla', 30, 'g'], ['Perejil', 1, 'puñado']],
                 [
                     'Lamina los champiñones y pica la cebolla.',
@@ -531,7 +531,7 @@ class AppFixtures extends Fixture
             [
                 'Sopa minestrone',
                 'Sopa italiana con verduras de temporada, judías y pasta corta.',
-                50, 6, $img('1547592180-85f173990554'), 'Sopas',
+                50, 6, $img('1611068120813-eca5a8cbf793'), 'Sopas',
                 [['Judías blancas', 200, 'g'], ['Calabacín', 1, 'ud'], ['Zanahoria', 2, 'ud'], ['Apio', 2, 'ramas'], ['Tomate triturado', 200, 'g'], ['Pasta ditalini', 100, 'g']],
                 [
                     'Sofríe zanahoria, apio y cebolla picados en aceite.',
@@ -543,7 +543,7 @@ class AppFixtures extends Fixture
             [
                 'Sopa de tomate casera',
                 'Sopa cremosa de tomates asados con albahaca.',
-                45, 4, $img('1547592180-85f173990554'), 'Sopas',
+                45, 4, $img('1530231391743-ea2c4268feb7'), 'Sopas',
                 [['Tomates maduros', 1, 'kg'], ['Cebolla', 1, 'ud'], ['Ajo', 3, 'dientes'], ['Caldo de verduras', 500, 'ml'], ['Albahaca', 1, 'puñado'], ['Aceite', 40, 'ml']],
                 [
                     'Asa los tomates partidos por la mitad con ajo y aceite a 200°C 25 minutos.',
@@ -569,7 +569,7 @@ class AppFixtures extends Fixture
             [
                 'Arroz negro con sepia',
                 'Arroz con tinta de calamar, sepia y un toque de alioli.',
-                45, 4, $img('1556761175-5973dc0f32e7'), 'Arroces',
+                45, 4, $img('1516714435131-44d6b64dc6a2'), 'Arroces',
                 [['Arroz bomba', 320, 'g'], ['Sepia', 400, 'g'], ['Tinta de calamar', 4, 'sobres'], ['Cebolla', 1, 'ud'], ['Tomate triturado', 100, 'g'], ['Caldo de pescado', 800, 'ml']],
                 [
                     'Sofríe cebolla y tomate, añade la sepia troceada y rehoga.',
@@ -617,7 +617,7 @@ class AppFixtures extends Fixture
             [
                 'Arroz con leche',
                 'Postre tradicional español de arroz cocido en leche con canela.',
-                60, 4, $img('1551404973-761c83cd8339'), 'Arroces',
+                60, 4, $img('1590055619273-44b5b6ce52e8'), 'Arroces',
                 [['Arroz redondo', 150, 'g'], ['Leche entera', 1, 'l'], ['Azúcar', 100, 'g'], ['Canela en rama', 1, 'ud'], ['Limón', 1, 'piel'], ['Canela en polvo', 1, 'pizca']],
                 [
                     'Lleva la leche a ebullición con la canela y la piel de limón.',
@@ -655,7 +655,7 @@ class AppFixtures extends Fixture
             [
                 'Curry de garbanzos al estilo indio',
                 'Garbanzos guisados en salsa especiada con tomate y leche de coco.',
-                40, 4, $img('1565895405137-61d1f3a9d36f'), 'Vegetariano',
+                40, 4, $img('1587033649773-5c231faa21e3'), 'Vegetariano',
                 [['Garbanzos cocidos', 400, 'g'], ['Tomate triturado', 400, 'g'], ['Leche de coco', 200, 'ml'], ['Cebolla', 1, 'ud'], ['Curry en polvo', 2, 'cda'], ['Jengibre', 15, 'g']],
                 [
                     'Pocha la cebolla picada con el jengibre rallado.',
@@ -667,7 +667,7 @@ class AppFixtures extends Fixture
             [
                 'Berenjenas a la parmesana',
                 'Berenjenas en capas con tomate, mozzarella y parmesano gratinadas.',
-                70, 4, $img('1574894709920-11b28e7367e3'), 'Vegetariano',
+                70, 4, $img('1632229095740-8c75082087c5'), 'Vegetariano',
                 [['Berenjenas', 2, 'ud'], ['Tomate triturado', 600, 'g'], ['Mozzarella', 200, 'g'], ['Parmesano', 80, 'g'], ['Albahaca', 1, 'puñado'], ['Aceite', 60, 'ml']],
                 [
                     'Lamina las berenjenas, sálalas y déjalas escurrir 20 minutos.',
@@ -679,7 +679,7 @@ class AppFixtures extends Fixture
             [
                 'Tabulé de quinoa con menta',
                 'Ensalada libanesa fresca con quinoa, perejil, menta y limón.',
-                30, 4, $img('1505253468034-514d2507d914'), 'Vegetariano',
+                30, 4, $img('1594040815645-5442fb6d48f6'), 'Vegetariano',
                 [['Quinoa', 200, 'g'], ['Tomate', 2, 'ud'], ['Pepino', 1, 'ud'], ['Perejil fresco', 1, 'puñado'], ['Menta fresca', 1, 'puñado'], ['Limón', 1, 'ud']],
                 [
                     'Cuece la quinoa lavada en agua con sal 12 minutos. Escurre y enfría.',
